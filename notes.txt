@@ -1,1 +1,30 @@
-test
+4/4/2019:
+
+-- About the Band Connect app --
+
+As mentioned in the README.md file for this repository, the primary purpose of this project at this time is to get practice building a single page application using React.js.
+
+The two main types of Services/Activities that a user can engage in are:
+	- Find a band to play with
+	- Find a member for your band
+
+There may be more types of services added later, such as postings for...
+
+	- spaces available to practice music
+	- music lessons
+	- musical instruments for sale
+
+	... but for now the app will focus on the first two listed above.
+
+Initial pages/screens of the app:
+
+- Sign Up / Log In
+- Search for a band or band member
+	- Modal or section opens up to enter/select search details and filters
+- Search Results
+- Messages section
+	- List view of numerous message threads
+	- Thread Detail view
+	- Create new message modal
+- Musician profile (regular and edit view)
+- Band profile (regular and edit view)
