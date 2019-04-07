@@ -1,5 +1,3 @@
-4/4/2019:
-
 -- About the Band Connect app --
 
 As mentioned in the README.md file for this repository, the primary purpose of this project at this time is to get practice building a single page application using React.js.
@@ -19,6 +17,23 @@ There may be more types of services added later, such as postings for...
 Initial pages/screens of the app:
 
 - Sign Up / Log In
+- Log In
+- Sign Up
+- Welcome
+- Musician profile (regular and edit view)
+	- Profile pic
+	- General bio
+	- Genres of music musician is interested in playing
+	- Music career goals or just for fun
+		- When setting up a profile, a user/musician will be asked to rate on a scale from 1 to 5 how serious they are about having a career in the music industry, with 1 being not looking for a music career at all and 5 being very serious.
+		  The ratings may be described similar to the following:
+		  1) Just want to play music for fun, and maybe get a jam band started.
+		  2) Definitely would like to get a jam band started, but probably not interested in playing music as a career.
+		  3) Definitely want to get a band started.  Could just be in a jam band and be happy; but having a career making music sounds great too!
+		  4) I am definitely serious in my music and would love to make a career of it.  I could play in a jam band and have fun, but I'd prefer to play with musicians who are looking for a career playing music as well.
+		  5) I am looking to make a career out of playing music, and I am only looking to connect with band members who are looking for the same.
+	- Instruments played
+- Band profile (regular and edit view)
 - Search for a band or band member
 	- Modal or section opens up to enter/select search details and filters
 - Search Results
@@ -26,5 +41,3 @@ Initial pages/screens of the app:
 	- List view of numerous message threads
 	- Thread Detail view
 	- Create new message modal
-- Musician profile (regular and edit view)
-- Band profile (regular and edit view)
