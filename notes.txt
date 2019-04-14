@@ -33,6 +33,7 @@ Initial pages/screens of the app:
 		  4) I am definitely serious in my music and would love to make a career of it.  I could play in a jam band and have fun, but I'd prefer to play with musicians who are looking for a career playing music as well.
 		  5) I am looking to make a career out of playing music, and I am only looking to connect with band members who are looking for the same.
 	- Instruments played
+	- Links to music demo audio and/or video files
 - Band profile (regular and edit view)
 - Search for a band or band member
 	- Modal or section opens up to enter/select search details and filters
