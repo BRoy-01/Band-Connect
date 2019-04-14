@@ -1,5 +1,6 @@
 body {
   font-family: sans-serif;
+  position: relative;
 }
 
 .title, .subtitle {
@@ -12,7 +13,7 @@ body {
   align-items: center;
 }
 .login-signup .button {
-  padding: 4px;
+  padding: 2px 7px;
 }
 .login-signup .button:first-child {
   margin-bottom: 10px;
@@ -62,6 +63,17 @@ input[type=submit]:hover {
 .back_btn:hover {
   background: grey;
   color: #fff;
+}
+
+.logout, .login {
+  padding: 2px 7px;
+  font-size: 13px;
+}
+
+.logout {
+  position: absolute;
+  top: -10px;
+  right: 2px;
 }
 
 /*# sourceMappingURL=custom.default.css.map */

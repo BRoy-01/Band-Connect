@@ -97,6 +97,7 @@ function displayThanks() {
 			<link type='text/css' href='custom.default.css' rel='stylesheet' />
     </head>
     <body class="welcome">
+				<a href="logout.php" class="logout button">Log out</a>
       	<h1>Band Connect</h1>
       	<p>Thank you for logging in.</p>
     </body>
