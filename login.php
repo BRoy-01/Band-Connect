@@ -23,9 +23,9 @@ function displayForm( $errorMessages, $missingFields, $member ) {
 			<link type='text/css' href='custom.default.css' rel='stylesheet' />
    </head>
   <body>
-		<h1>Band Connect</h1>
+		<h1 class="title">Band Connect</h1>
 		<div class="login">
-      <h2>Log In</h2>
+      <h2 class="subtitle">Log In</h2>
 
 <?php
 	if ( $errorMessages ) {
@@ -44,7 +44,7 @@ function displayForm( $errorMessages, $missingFields, $member ) {
 
 				<input type="submit" name="submitButton" id="submitButton" value="Login" />
 			</form>
-			<a href="Login_Signup.html" class="back_btn">Back</a>
+			<a href="Login_Signup.html" class="back_btn button">Back</a>
 		</div>
 	</body>
 </html>

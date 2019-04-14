@@ -3,7 +3,11 @@
   flex-direction: column;
   align-items: center;
 
-  a:first-child {
-    margin-bottom: 10px;
+  .button {
+    padding: 4px;
+
+    &:first-child {
+      margin-bottom: 10px;
+    }
   }
 }

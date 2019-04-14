@@ -1,0 +1,27 @@
+.button {
+  background: #fff;
+  color: grey;
+  border: 1px solid grey;
+  transition: background-color .4s, color .4s;
+  text-decoration: none;
+  border-radius: 5px;
+
+  &:hover {
+    background: grey;
+    color: #fff;
+  }
+}
+
+.back_btn {
+  display: block;
+  width: 60px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  padding-top: 1px;
+
+  &:hover {
+    background: grey;
+    color: #fff;
+  }
+}
