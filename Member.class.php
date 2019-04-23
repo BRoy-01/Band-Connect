@@ -49,6 +49,23 @@ class Member extends DataObject {
       }
    }
 
+   public static function getMember( $id ) {
+      $conn = parent::connect();
+      $sql = "SELECT * FROM " . TBL_MEMBERS . " WHERE UserID = :id";
+    
+      try {
+         $st = $conn->prepare( $sql );
+         $st->bindValue( ":id", $id, PDO::PARAM_INT );
+         $st->execute();
+         $row = $st->fetch();
+         parent::disconnect( $conn );
+         if ( $row ) return new Member( $row );
+      } catch ( PDOException $e ) {
+         parent::disconnect( $conn );
+         die( "Query failed: " . $e->getMessage() );
+      }
+    }
+
    public function insert() {
       $conn = parent::connect();
       $sql = "INSERT INTO " . TBL_MEMBERS . " (

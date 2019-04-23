@@ -9,4 +9,17 @@ function validateField( $fieldName, $missingFields ) {
    }
 }
 
+function checkLogin() {
+
+	if( !isset($_SESSION) ) {
+		session_start();
+	}
+	
+	if ( !$_SESSION["member"] or !$_SESSION["member"] = Member::getMember( $_SESSION["member"]->getValue( "UserID" ) ) ) {
+		$_SESSION["member"] = "";
+		header( "Location: login.php" );
+		exit;
+	}
+}
+
 ?>

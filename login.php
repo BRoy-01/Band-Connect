@@ -3,7 +3,13 @@ require_once( "common.inc.php" );
 
 session_start();
 
-if ( isset( $_POST["action"] ) and $_POST["action"] == "login" ) {
+if ( isset($_GET['loggedin']) ) {
+	// use checkLogin() here to make sure user is actually logged in before displaying the
+	// "thanks" message, otherwise a user could just add ?loggedin=1 to the end of login.php
+	// to see the thanks message without actually being logged in.
+	checkLogin();
+	displayThanks();
+} elseif ( isset( $_POST["action"] ) and $_POST["action"] == "login" ) {
 	processForm();
 } else {
 	displayForm( array(), array(), new Member( array() ) );
@@ -79,7 +85,16 @@ function processForm() {
 	} else {
 		$_SESSION["member"] = $loggedInMember;
 
-		displayThanks();
+		// displayThanks();
+
+		// Redirecting here instead of calling displayThanks() as shown in the book in order
+		// to prevent seeing a "Confirm Form Resubmission" message or page if a user refreshes 
+		// the login page while viewing the "thanks" message, or if the user clicks the link on 
+		// the thanks message to go to "search.php" then clicks the 'back' button.
+
+		// This is using the prg(post/redirect/get) design pattern to prevent the "confirm form 
+		// resubmission" issue.
+		header("Location: login.php?loggedin=1");
 	}
 }
 
@@ -100,6 +115,7 @@ function displayThanks() {
 				<a href="logout.php" class="logout button">Log out</a>
       	<h1>Band Connect</h1>
       	<p>Thank you for logging in.</p>
+				<p>Click <a href="search.php">here</a> to go to the search screen.</p>
     </body>
 </html>
 
